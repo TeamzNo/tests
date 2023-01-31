@@ -1,0 +1,84 @@
+-- CREDS TO AHMEDR2
+-- discord: https://discord.gg/EdJbBN5xD2
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Londons Calling Script", "Sentinel")
+
+--MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main (not bait)")
+    
+
+MainSection:NewButton("ESP", "Includes health and other features", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"), true))()
+end)
+
+MainSection:NewButton("Chat spy (/spy to disable/toggle)", "Allows you to see all games chats", function()
+    loadstring(game:HttpGet(("https://pastebin.com/raw/MwmrpsPK"), true))()
+end)
+
+MainSection:NewButton("Autoclicker", "Good for knives", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
+end)
+
+MainSection:NewButton("Refill hunger", "No cost and back to 100pc", function()
+    if true then game.Players.LocalPlayer.Hunger.Value = 100 wait() end
+end)
+
+local MainSection = Main:NewSection("Main (bait, dont do when mods r around)")
+
+ MainSection:NewSlider("Walkspeed", "SPEED!!", 200, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+
+    MainSection:NewButton("Reset WS", "Resets to all defaults", function()
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end)
+    
+MainSection:NewButton("Fly (Left Alt to toggle)", "so bait but fun in own server", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/75U6zUmq", true))()
+end)
+    
+--TPs
+
+local Main = Window:NewTab("Teleports")
+local MainSection = Main:NewSection("Jobs")
+
+
+MainSection:NewButton("Nandos", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-648.528625, 4.09635687, 415.83493, -0.999209762, -2.2432241e-08, -0.0397471711, -2.04651887e-08, 1, -4.98959949e-08, 0.0397471711, -4.90431304e-08, -0.999209762)
+end)
+
+MainSection:NewButton("Uber eats/kebab", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-570.641541, 3.89755917, 23.3558407, -0.999460697, 6.59613297e-09, -0.0328369886, 5.01537567e-09, 1, 4.82219065e-08, 0.0328369886, 4.8031211e-08, -0.999460697)
+end)
+
+MainSection:NewButton("Trap job signup", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-573.389099, 5.24537754, -203.647217, -0.558225334, 0.570103288, -0.602799118, -0.00651261769, 0.723502696, 0.690291047, 0.829663873, 0.389263719, -0.400164604)
+end)
+
+local MainSection = Main:NewSection("Trapping")
+
+MainSection:NewButton("Buy seeds", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-484.677582, 3.90648556, -224.474594, -0.984454989, 1.54573563e-08, 0.1756372, 1.60888636e-08, 1, 2.17155294e-09, -0.1756372, 4.96359887e-09, -0.984454989)
+end)
+
+MainSection:NewButton("Someone's private pots (risky)", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-438.065857, 13.1832829, 104.038628, -0.979465306, 4.23043183e-08, 0.20161283, 2.28019754e-08, 1, -9.90540912e-08, -0.20161283, -9.24228729e-08, -0.979465306)
+end)
+
+MainSection:NewButton("Grow house pots", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-999.634888, 4.08378458, -373.528168, 0.989106178, -7.9362808e-11, -0.147203937, 1.99453801e-10, 1, 8.01053168e-10, 0.147203937, -8.21686996e-10, 0.989106178)
+end)
+
+--creds
+
+local Main = Window:NewTab("Credits")
+local MainSection = Main:NewSection("Credits to AhmedR2#4979")
+
+
+MainSection:NewButton("Click for discord link to suggest or get help", "", function()
+    setclipboard("https://discord.gg/EdJbBN5xD2")
+    toclipboard("https://discord.gg/EdJbBN5xD2")
+end)
